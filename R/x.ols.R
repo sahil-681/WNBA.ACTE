@@ -4,6 +4,7 @@
 #'                where 1 represents treated and 0 represents control.
 #' @param y_train The vector of observed outcomes for the training dataset.
 #' @return A list containing the fitted OLS model object.
+#' @export
 x.ols <- function(x_data, w_train, y_train){
   xt <- x_data[w_data == 1, ]
   xc <- x_data[w_data == 0, ]

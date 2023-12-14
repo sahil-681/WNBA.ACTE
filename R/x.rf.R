@@ -5,6 +5,7 @@
 #' @param data.y outcome vector for athletes in dataset
 #' @return a list containing the models that estimate the treatment effects
 #' for the treated groups, control groups, and propensity score estimation
+#' @export
 x.rf <- function(data.x, data.t, data.y){
   x.t <- data.x[data.t == 1, ]
   x.c <- data.x[data.t == 0, ]

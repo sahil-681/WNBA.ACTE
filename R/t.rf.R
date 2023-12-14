@@ -4,6 +4,7 @@
 #'               whether the athlete has received treatment (1) or not (0)
 #' @param data.y outcome vector for athletes in dataset
 #' @return a list containing the trained T-learner model
+#' @export
 t.rf <- function(data.x, data.t, data.y){
   x.t <- data.x[data.t == 1, ]
   x.c <- data.x[data.t == 0, ]

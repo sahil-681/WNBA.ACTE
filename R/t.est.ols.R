@@ -2,6 +2,7 @@
 #' @param xmodel x-learner model
 #' @param x_data data containing covariate features
 #' @return CATE estimates
+#' @export
 t.est.ols <- function(xmodel, x_data){
   mu0 <- predict(xmodel$m1, x_data)
   mu1 <- predict(xmodel$m2, x_data)

@@ -2,6 +2,7 @@
 #' @param xmodel x-learner model
 #' @param data.x data containing covariate features
 #' @return CATE estimates
+#' @export
 x.est.rf <- function(xmodel, data.x){
   tau1 <- predict(xmodel$m3, data.x)
   tau0 <- predict(xmodel$m4, data.x)
