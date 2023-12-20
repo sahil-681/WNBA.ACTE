@@ -4,8 +4,7 @@ library(dplyr)
 library(splines)
 library(pubtheme)
 library(reshape2)
-source("R/x.ols.R")
-source("R/x.est.ols.R")
+source("scripts/X_RF_OLS.R")
 
 df <- readRDS("data/1_Cleaned_df.rds")
 
