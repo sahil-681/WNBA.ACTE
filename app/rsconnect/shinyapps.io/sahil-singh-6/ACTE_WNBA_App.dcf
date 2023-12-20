@@ -1,0 +1,12 @@
+name: ACTE_WNBA_App
+title: ACTE_WNBA_App
+username: sahil-singh-6
+account: sahil-singh-6
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 10828514
+bundleId: 8067372
+url: https://sahil-singh-6.shinyapps.io/ACTE_WNBA_App/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE
