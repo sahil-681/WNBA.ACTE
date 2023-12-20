@@ -1,7 +1,6 @@
 library(dplyr)
 library(tidyr)
-source("R/remove_middle_name.R")
-source("R/clean_player_name.R")
+source("scripts/X_RF_OLS.R")
 
 # Read in the clean pbg and games RDS files and combine the datasets
 pbg_files <- list.files(path = "data/cleandata/pbg", 

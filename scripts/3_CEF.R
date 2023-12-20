@@ -94,7 +94,10 @@ for (var in yvars){
     ggplot(aes(x=age, y = get(var), group = trtstr, 
                                  color = trtstr)) +
     geom_line() + 
-    labs(x = 'Age', y = var) +  
+    labs(title = "Conditional Expectation Function",
+         subtitle = paste0("Age vs ", var),
+         x = 'Age', 
+         y = var) +  
     scale_x_continuous() + 
     scale_y_continuous() + 
     coord_cartesian(clip='off', expand=FALSE) +
@@ -104,7 +107,7 @@ for (var in yvars){
          width = 7, height = 5)
 }
 
-var <- "a40"
+var <- "p40"
 var <- paste0("Pred.", var)
 dg = df[sample(1:nrow(df), 1000),] ## randomly select 1000 rows, or 10000, or something
 dg$trtstr <- "Back-to-back"

@@ -111,7 +111,8 @@ xolsp <- dfp %>% ggplot(aes(x=age, y = value, group = variable,
                             color = variable)) +
   geom_line() + 
   labs(title    = "X-learner (Spline Regression)",
-       subtitle = 'Average Rate Statistics ACTE', x = 'Age', 
+       subtitle = paste0('Average Rate Statistics ACTE (Season: ', s, ')'), 
+       x = 'Age', 
        y = "Outcome") +  
   
   scale_x_continuous() + 
